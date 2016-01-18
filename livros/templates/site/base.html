@@ -1,0 +1,16 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Talismã Biblioteca</title>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	</head>
+	<body>
+		{% include 'site/header.html'%}
+		{% block content%}
+		{% endblock content%}
+		{% include 'site/footer.html' %}
+		
+	</body>
+</html>

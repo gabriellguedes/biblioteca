@@ -1,0 +1,35 @@
+{% extends 'site/base.html'%}
+{% block content%}
+	<main id="content">
+		<h2>Todos os livros</h2>
+		<table>
+			<tr>
+				<td>Id</td>
+				<td>Titulo</td>
+				<td>Autor</td>
+				<td>Editora</td>
+				<td>Categoria</td>
+				<td>Opções</td>
+				
+			</tr>
+				
+				{% for x in livros %}
+				<tr>
+					<td>{{x.id_livro}}</td>
+					<td>
+						<a href="{% url 'livros.views.detalhes' pk=x.pk %}">
+							{{x.titulo_livro}}
+						</a>
+					</td>
+					<td>{{x.autor_livro}}</td>
+					<td>{{x.editora_livro}}</td>
+					<td>{{x.categoria_livro}}</td>
+					<td>
+						<a href="{% url 'livros.views.excluir' pk=x.pk %}"> Excluir </a>
+					</td>
+				</tr>
+				{% endfor %}
+				
+		</table>
+	</main>
+{%endblock content%}

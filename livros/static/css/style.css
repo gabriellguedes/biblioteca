@@ -1,0 +1,115 @@
+/* RESET */
+* {
+margin:0;
+padding:0;
+list-style:none;
+vertical-align:baseline;
+}
+a{
+	text-decoration: none;
+	text-transform: none;
+}
+.container{
+	margin: 0 auto;
+	width: 980px;
+}
+/****************************************************************
+		HEADER 
+*****************************************************************/
+#header{
+	background:#1E1E1E;
+	min-height: 100px;
+	width: 100%;
+}
+	#title{
+		color: #ffffff;
+		padding: 30px 0;
+		font-size: 40px;
+	}
+	#subtitle{
+		color: #ffffff;
+		margin: -30px 0 0;
+		padding-bottom:30px;
+		font-size: 28px; 
+	}
+/**********************************
+		MENU
+***********************************/			
+#navigation{
+	background: #000000;
+	margin-bottom:10px;
+	width: 100%;
+}
+	#nav{
+		color: #ffffff;
+	}
+	#nav a > li{
+		color: #ffffff;
+	    display: inline-block;
+	    margin-right: 20px;
+	    min-height: 10px;
+	    padding: 10px 5px;
+	    text-decoration: none;
+	    text-transform: none;
+	}
+	#nav a>li:hover{
+		background: #1E1E1E;
+
+	}
+/****************************************************************
+		CONTENT
+*****************************************************************/	
+#content{
+	margin: 0 auto;
+	width: 980px;
+	min-height: 315px;
+}
+/****************************************************************
+		FOOTER
+*****************************************************************/
+#footer{
+	background:#1E1E1E;
+	margin-top: 10px;
+	min-height: 80px;
+	width: 100%;
+}
+	#footer section>ul{
+		display: inline-block;
+		line-height: 25px;
+    	margin: 10px 45px;
+	}
+	
+	#footer-menu{
+		color: #000000;
+	}
+		#footer-menu a{
+			color: #ffffff;
+		}
+		#footer-menu a>li{
+			font-size: 14px;
+		    padding: 5px;
+		    text-align: left;
+		}
+		#footer-menu a>li:hover{
+			background: #000000;
+		}
+	#redes-sociais{
+		float: right;
+		padding: 10px 50px;
+	}
+		#redes-sociais li{
+			display: inline-block;
+		}
+		#redes-sociais li:hover{
+			background: #ffffff;
+			border-radius: 20px;
+			height: 40px; 
+		}
+		#redes-sociais li>a>img{
+			width: 40px;
+		}
+	#subfooter{
+		background: #000000;
+		min-height: 40px;
+		width: 100%;
+	}

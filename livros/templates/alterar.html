@@ -1,0 +1,12 @@
+{% extends 'site/base.html'%}
+{% block content%}
+	<main id="content">
+		<h2>Alterar dados sobre o livro</h2>
+		<form method="GET" >{% csrf_token %}
+        	{{ form.as_p }}
+	        <button type="submit" >Alterar</button>
+        </table>        
+     </form>         
+
+	</main>
+{%endblock content%}

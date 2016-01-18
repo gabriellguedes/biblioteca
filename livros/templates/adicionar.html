@@ -1,0 +1,14 @@
+{% extends 'site/index.html'%}
+{% block content%}
+	<main id="content">
+		<h2>Adicionar Novo Livro</h2>
+		
+		
+		 <form method="POST" class="post-form">{% csrf_token %}
+	        {{ form.as_p }}
+	        <button type="submit" class="save btn btn-default">Adicionar</button>
+	    </form>
+		
+
+	</main>
+{%endblock content%}
