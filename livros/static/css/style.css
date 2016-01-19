@@ -113,6 +113,25 @@ a{
 	    text-transform: uppercase;
 
 	}
+	#desc-system{
+		display: inline-block;
+		min-height: 270px;
+		width: 49%;
+	}
+		#desc-system p{
+			text-align: justify;
+		}
+	#photos-system{
+		display: inline-block;
+		min-height: 270px;
+		width: 49%;
+		float: right;
+		margin-right: 5px;
+	}
+		#photos-system img{
+			width: 215px;
+			margin: 0 0 0 30px;
+		}
 
 	table {
 	  border-collapse: collapse;
@@ -209,7 +228,7 @@ a{
 #footer{
 	background:#595959;
 	margin-top: 10px;
-	min-height: 80px;
+	min-height: 100px;
 	width: 100%;
 }
 	#footer section>ul{
@@ -249,6 +268,6 @@ a{
 		}
 	#subfooter{
 		background: #1E1E1E;
-		min-height: 40px;
+		min-height: 30px;
 		width: 100%;
 	}

@@ -1,7 +1,15 @@
 {% extends 'site/base.html' %}
+{% load staticfiles %}
 {% block content %}
 	<main id="content">
-		<h3>Sobre o programa</h3>
-		<p>A biblioteca talismã ... blá, blá.</p>
+		<h3 class="title">Sobre o programa</h3>
+		<section id="desc-system">
+			<p>A Biblioteca Talismã é um sitema de cadastro de livros, desenvolvido com o proposito de ser como um controle de estoque, só que exclusivamente para livros.</p>
+			<p>Não armazenamos o conteúdo do livro, são registrados apenas algumas de suas caracteristicas, como titulo, autor, editora, entre outras.</p>	
+		</section>
+		<section id="photos-system">
+			<img src="{% static 'img/books.png' %}">
+		</section>
+		
 	</main>
 {% endblock content%}
