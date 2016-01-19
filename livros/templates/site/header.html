@@ -1,7 +1,15 @@
+{% load staticfiles %}
 <header id="header">
-	<div class="container">
-		<a href="{% url 'livros.views.index' %}"><h1 id="title">Biblioteca </h1><h2 id="subtitle">Talismã</h2></a>
-	</div>	
+	<section class="container">
+		<a href="{% url 'livros.views.index' %}">
+			<img id="img-logo" src="{% static 'img/logo.png' %}">
+			<h1 id="title">Biblioteca </h1>
+			<h2 id="subtitle">Talismã</h2>
+		</a>
+		<div id="redes-sociais-header">
+			{% include 'site/sociais.html' %}
+		</div>	
+	</section>	
 </header>
 <nav id="navigation">
 	<ul id="nav" class="container">

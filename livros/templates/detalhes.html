@@ -1,5 +1,5 @@
 {% extends 'site/base.html' %}
-
+{% load staticfiles %}
 {% block content %}
   <main class="container">
   	<h3> Detalhes do livros</h3>
@@ -10,14 +10,17 @@
             </div>
         {% endif %}
 		<table>
-			<tr>
-				<td>Id</td>
-				<td>Titulo</td>
-				<td>Autor</td>
-				<td>Editora</td>
-				<td>Categoria</td>
-				<td>Opções</td>
-			</tr>
+			<thead>
+				<tr>
+					<td>Id</td>
+					<td>Titulo</td>
+					<td>Autor</td>
+					<td>Editora</td>
+					<td>Categoria</td>
+					<td>Opções</td>
+				</tr>
+			</thead>
+			<tbody>	
 				<tr>
 					<td>{{post.id_livro}}</td>
 					<td>{{post.titulo_livro}}</td>
@@ -25,11 +28,26 @@
 					<td>{{post.editora_livro}}</td>
 					<td>{{post.categoria_livro}}</td>
 					<td>
-						<a href="{% url 'livros.views.alterar' pk=post.pk %}">Alterar</a>
+						<a href="{% url 'livros.views.alterar' pk=post.pk %}">
+							 Alterar <img src="{% static 'img/update.png' %}" />
+						</a>
+						<a href="{% url 'livros.views.excluir' pk=post.pk %}">
+							 Excluir <img src="{% static 'img/delete.png' %}" />
+						</a>
 					</td>
 				</tr>
-				
-			
+			</tbody>
+
+			<tfoot>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>					
+				</tr>
+			</tfoot>		
 		</table>        
      </form>         
     </main>

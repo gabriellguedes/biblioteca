@@ -39,8 +39,8 @@ def alterar(request, pk):
 	
 def excluir(request, pk):
 	post = get_object_or_404(Livros, pk=pk).delete()
-
-	return render(request, 'excluir.html', {'post': post}), redirect ('livros.views.detalhes')
+	redirect ('livros.views.detalhes')
+	return render(request, 'excluir.html', {'post': post})
 
 def listar(request):
 	livros = Livros.objects.all()

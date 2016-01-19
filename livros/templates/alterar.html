@@ -1,10 +1,10 @@
 {% extends 'site/base.html'%}
 {% block content%}
 	<main id="content">
-		<h2>Alterar dados sobre o livro</h2>
-		<form method="GET" >{% csrf_token %}
+		<h3 class="title">Alterar dados sobre o livro</h3>
+		<form method="GET" class="form-post">{% csrf_token %}
         	{{ form.as_p }}
-	        <button type="submit" >Alterar</button>
+	        <button type="submit" class="button" >Alterar</button>
         </table>        
      </form>         
 

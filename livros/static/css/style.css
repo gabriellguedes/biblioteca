@@ -17,26 +17,41 @@ a{
 		HEADER 
 *****************************************************************/
 #header{
-	background:#1E1E1E;
+	background:#595959;
 	min-height: 100px;
 	width: 100%;
 }
+	#img-logo{
+		display: inline-block;
+	    float: left;
+	    margin: 20px 15px 0 0;
+	    width: 100px;
+	}
 	#title{
 		color: #ffffff;
-		padding: 30px 0;
-		font-size: 40px;
+	    display: inline-block;
+	    font-size: 40px;
+	    padding: 30px 0;
+	    width: 290px;
 	}
 	#subtitle{
 		color: #ffffff;
-		margin: -30px 0 0;
-		padding-bottom:30px;
-		font-size: 28px; 
+	    display: block;
+	    font-size: 28px;
+	    margin: -30px 0 0;
+	    padding-bottom: 30px;
+	    width: 290px;
 	}
+#redes-sociais-header{
+	float: right;
+    margin: -100px 30px 0;
+    width: 390px;
+}	
 /**********************************
 		MENU
 ***********************************/			
 #navigation{
-	background: #000000;
+	background: #1E1E1E;
 	margin-bottom:10px;
 	width: 100%;
 }
@@ -47,13 +62,17 @@ a{
 		color: #ffffff;
 	    display: inline-block;
 	    margin-right: 20px;
-	    min-height: 10px;
-	    padding: 10px 5px;
+	    padding: 8px 5px;
 	    text-decoration: none;
 	    text-transform: none;
+	    font-size: 14px;
+	    letter-spacing: 1.5px;
+	    font-family: verdana;
+	    font-weight: bold;
 	}
 	#nav a>li:hover{
-		background: #1E1E1E;
+		background: #ffffff;
+		color: #1E1E1E;
 
 	}
 /****************************************************************
@@ -64,11 +83,85 @@ a{
 	width: 980px;
 	min-height: 315px;
 }
+	.title{
+		font-size: 22px;
+		margin: 15px 0;
+	}
+	.form-post{
+		 min-height: 100px;
+    	width: 30%;
+	}
+	.form-post>p{
+		line-height: 40px;
+	}
+	.form-post>p>input{
+		float: right;
+		margin-top: 10px;
+	}
+	.form-pos>ul>li{
+		color: red;
+	}
+	.button{
+		background: #1e1e1e none repeat scroll 0 0;
+	    border-radius: 15px;
+	    color: #ffffff;
+	    font-size: 12px;
+	    letter-spacing: 0.2em;
+	    margin-top: 25px;
+	    padding: 3px 15px;
+	    text-transform: uppercase;
+
+	}
+
+	table {
+	  border-collapse: collapse;
+	  width: 100%;
+	  border: 1px solid #666;
+	}
+	thead {
+	  background: #ccc url(http://www.devfuria.com.br/html-css/tabelas/bar.gif) repeat-x left center;
+	  border-top: 1px solid #a5a5a5;
+	  border-bottom: 1px solid #a5a5a5;
+	  font-size: 16px;
+      letter-spacing: 1px;
+	}
+	thead>tr>td{
+		font-size: 14px;
+		font-weight: bold;
+	}
+	tbody>tr>td{
+		font-size: 14px;
+	}
+	tr:nth-child(even) {
+	    background-color: #edf5ff;
+	}
+	td {
+	  padding: 0.1em 1em;
+	}
+	td>a{
+		text-transform: none;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 14px;
+		color: #595959;
+	}
+	td>a>img{
+		width: 15px;
+	}
+	tfoot{
+		background: #ccc url(http://www.devfuria.com.br/html-css/tabelas/bar.gif) repeat-x left center;
+	    border-top: 1px solid #a5a5a5;
+	    border-bottom: 1px solid #a5a5a5;
+	    min-height: 10px;
+	}
+	tfoot>tr>td{
+		padding: 5px 0;
+	}
 /****************************************************************
 		FOOTER
 *****************************************************************/
 #footer{
-	background:#1E1E1E;
+	background:#595959;
 	margin-top: 10px;
 	min-height: 80px;
 	width: 100%;
@@ -91,11 +184,11 @@ a{
 		    text-align: left;
 		}
 		#footer-menu a>li:hover{
-			background: #000000;
+			font-weight: bold;
 		}
 	#redes-sociais{
 		float: right;
-		padding: 10px 50px;
+		padding: 10px 0;
 	}
 		#redes-sociais li{
 			display: inline-block;
@@ -109,7 +202,7 @@ a{
 			width: 40px;
 		}
 	#subfooter{
-		background: #000000;
+		background: #1E1E1E;
 		min-height: 40px;
 		width: 100%;
 	}

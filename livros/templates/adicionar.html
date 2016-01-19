@@ -1,12 +1,13 @@
 {% extends 'site/index.html'%}
 {% block content%}
 	<main id="content">
-		<h2>Adicionar Novo Livro</h2>
+		<h3 class="title">Adicionar Novo Livro</h3>
 		
 		
-		 <form method="POST" class="post-form">{% csrf_token %}
+		 <form method="POST" class="form-post">
+		 	{% csrf_token %}
 	        {{ form.as_p }}
-	        <button type="submit" class="save btn btn-default">Adicionar</button>
+	        <button type="submit" class="save btn btn-default button">Adicionar</button>
 	    </form>
 		
 
