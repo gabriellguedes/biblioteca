@@ -108,7 +108,7 @@ a{
 	    color: #ffffff;
 	    font-size: 12px;
 	    letter-spacing: 0.2em;
-	    margin-top: 25px;
+	    margin: 25px 40px 25px 0;
 	    padding: 3px 15px;
 	    text-transform: uppercase;
 
@@ -146,6 +146,14 @@ a{
 		font-size: 14px;
 		color: #595959;
 	}
+	td>button{
+		background: transparent;
+		text-transform: none;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 14px;
+		color: #595959;
+	}
 	td>a>img{
 		width: 15px;
 	}
@@ -161,6 +169,7 @@ a{
 
 	#details{
 		width: 80%;
+		margin-bottom: 40px;
 	}
 	#details>label{
 		font-weight: bold;
@@ -190,6 +199,9 @@ a{
 	    letter-spacing: 0.1em;
 	    margin-right: 40px;
 	    padding: 2px 15px;
+	}
+	button>img{
+		width: 15px;
 	}
 /****************************************************************
 		FOOTER

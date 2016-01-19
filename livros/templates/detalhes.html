@@ -16,8 +16,13 @@
 			<a href="{% url 'livros.views.alterar' pk=post.pk %}">
 				<img src="{% static 'img/update.png' %}" /> Alterar 
 			</a>
-			<a href="{% url 'livros.views.excluir' pk=post.pk %}">
+			<button class="button-back"  onclick="new MyQuestion('Deseja realmente excluir o livro {{ post.titulo_livro }}',
+    '{% url 'livros.views.excluir' pk=post.pk %}').question()">
 				<img src="{% static 'img/delete.png' %}" /> Excluir
+			</button>	
+			<a href="{% url 'livros.views.listar' %}">
+				<img src="{% static 'img/back.png' %}"> Voltar				
+			</a>	
 		</section>		
         
     </main>

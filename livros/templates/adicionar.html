@@ -1,4 +1,5 @@
 {% extends 'site/index.html'%}
+{% load staticfiles %}
 {% block content%}
 	<main id="content">
 		<h3 class="title">Adicionar Novo Livro</h3>
@@ -8,6 +9,9 @@
 		 	{% csrf_token %}
 	        {{ form.as_p }}
 	        <button type="submit" class="save btn btn-default button">Adicionar</button>
+	        <a href="{% url 'livros.views.index' %}" class="button-back">
+				<img src="{% static 'img/back.png' %}"> Voltar				
+			</a>
 	    </form>
 		
 
