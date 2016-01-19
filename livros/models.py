@@ -7,6 +7,7 @@ class Livros(models.Model):
 	autor_livro = models.CharField(max_length=200)
 	editora_livro = models.CharField(max_length=200)
 	categoria_livro =  models.CharField(max_length=200)
-	
+	descricao = models.TextField(max_length=4000)
+
 	def __unicode__(self):
 		return '%s - %s' %(self.id_livro, self.titulo_livro)	

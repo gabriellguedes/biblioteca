@@ -89,7 +89,7 @@ a{
 	}
 	.form-post{
 		 min-height: 100px;
-    	width: 30%;
+    	width: 40%;
 	}
 	.form-post>p{
 		line-height: 40px;
@@ -97,6 +97,7 @@ a{
 	.form-post>p>input{
 		float: right;
 		margin-top: 10px;
+		width: 65%;
 	}
 	.form-pos>ul>li{
 		color: red;
@@ -156,6 +157,39 @@ a{
 	}
 	tfoot>tr>td{
 		padding: 5px 0;
+	}
+
+	#details{
+		width: 80%;
+	}
+	#details>label{
+		font-weight: bold;
+	}
+	#details>a {
+		background: #ffffff none repeat scroll 0 0;
+	    border-radius: 10px;
+	    border: 1px solid #000000;
+	    color: #4d4d4d;
+	    font-size: 14px;
+	    font-weight: bold;
+	    letter-spacing: 0.1em;
+	    margin-right: 40px;
+	    padding: 2px 15px;
+	}
+	#details>a>img{
+		width: 15px;
+	}
+
+	.button-back{
+		background: #ffffff none repeat scroll 0 0;
+	    border-radius: 10px;
+	    border: 1px solid #000000;
+	    color: #4d4d4d;
+	    font-size: 14px;
+	    font-weight: bold;
+	    letter-spacing: 0.1em;
+	    margin-right: 40px;
+	    padding: 2px 15px;
 	}
 /****************************************************************
 		FOOTER

@@ -2,53 +2,23 @@
 {% load staticfiles %}
 {% block content %}
   <main class="container">
-  	<h3> Detalhes do livros</h3>
-    <form method="POST" class="post-form">{% csrf_token %}
-        {% if post.published_date %}
-            <div class="date">
-        		{{ post.published_date }}
-            </div>
-        {% endif %}
-		<table>
-			<thead>
-				<tr>
-					<td>Id</td>
-					<td>Titulo</td>
-					<td>Autor</td>
-					<td>Editora</td>
-					<td>Categoria</td>
-					<td>Opções</td>
-				</tr>
-			</thead>
-			<tbody>	
-				<tr>
-					<td>{{post.id_livro}}</td>
-					<td>{{post.titulo_livro}}</td>
-					<td>{{post.autor_livro}}</td>
-					<td>{{post.editora_livro}}</td>
-					<td>{{post.categoria_livro}}</td>
-					<td>
-						<a href="{% url 'livros.views.alterar' pk=post.pk %}">
-							 Alterar <img src="{% static 'img/update.png' %}" />
-						</a>
-						<a href="{% url 'livros.views.excluir' pk=post.pk %}">
-							 Excluir <img src="{% static 'img/delete.png' %}" />
-						</a>
-					</td>
-				</tr>
-			</tbody>
-
-			<tfoot>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>					
-				</tr>
-			</tfoot>		
-		</table>        
-     </form>         
+  	<h3 class="title"> Detalhes do livros</h3>
+    	<section id="details">
+	        
+			
+			<label>Registro: </label>{{post.id_livro}}<br/>
+			<label>Titulo: </label>{{post.titulo_livro}}<br/>
+			<label>Autor: </label>{{post.autor_livro}}<br/>
+			<label>Editora: </label>{{post.editora_livro}}<br/>
+			<label>Categoria: </label>{{post.categoria_livro}}<br/>
+			<label>Descrição:</label><p>{{post.descricao}}</p><br/>
+			
+			<a href="{% url 'livros.views.alterar' pk=post.pk %}">
+				<img src="{% static 'img/update.png' %}" /> Alterar 
+			</a>
+			<a href="{% url 'livros.views.excluir' pk=post.pk %}">
+				<img src="{% static 'img/delete.png' %}" /> Excluir
+		</section>		
+        
     </main>
 {% endblock %}

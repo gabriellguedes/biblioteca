@@ -21,6 +21,7 @@ class Migration(migrations.Migration):
                 ('autor_livro', models.CharField(max_length=200)),
                 ('editora_livro', models.CharField(max_length=200)),
                 ('categoria_livro', models.CharField(max_length=200)),
+                ('descricao', models.TextField()),
             ],
         ),
     ]
