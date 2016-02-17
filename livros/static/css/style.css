@@ -17,7 +17,7 @@ a{
 		HEADER 
 *****************************************************************/
 #header{
-	background:#595959;
+	background: linear-gradient(#1D1D1D 5%, #595959 80%, #1D1D1D);
 	min-height: 100px;
 	width: 100%;
 }
